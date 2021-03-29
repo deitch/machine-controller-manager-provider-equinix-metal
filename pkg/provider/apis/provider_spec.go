@@ -13,20 +13,8 @@ limitations under the License.
 
 package api
 
-const (
-	// APIKey is a constant for a key name that is part of the Packet cloud credentials
-	APIKey string = "apiToken"
-)
-
-// EquinixMetalProviderSpec is the spec to be used while parsing the calls.
-type EquinixMetalProviderSpec struct {
-	APIVersion   string   `json:"apiVersion,omitempty"`
-	Facility     []string `json:"facility"`
-	MachineType  string   `json:"machineType"`
-	BillingCycle string   `json:"billingCycle"`
-	OS           string   `json:"OS"`
-	ProjectID    string   `json:"projectID"`
-	Tags         []string `json:"tags,omitempty"`
-	SSHKeys      []string `json:"sshKeys,omitempty"`
-	UserData     string   `json:"userdata,omitempty"`
+// ProviderSpec is the spec to be used while parsing the calls.
+type ProviderSpec struct {
+	// APIVersion        string                      `json:"apiVersion,omitempty"`
+	// AMI               string                      `json:"ami,omitempty"`
 }
